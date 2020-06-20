@@ -2,7 +2,7 @@ package main.java;
 
 import java.util.List;
 
-public class FunctionalProgrammingStructuredData {
+public class FunctionalProgrammingStructured2FunctionalData {
 
 	public static void main(String[] args) {
 
@@ -23,12 +23,8 @@ public class FunctionalProgrammingStructuredData {
 	private static void printAllNumbersInFunctionalWay(List<Integer> numbers) {
 		System.out.println("\nPrint All Numbers In Functional Way");
 		// What to do?
-		numbers.stream().forEach(FunctionalProgrammingStructuredData::print);// Method reference
+		numbers.stream().forEach(System.out::print);// Method reference
 
-	}
-
-	private static void print(int number) {
-		System.out.print(number);
 	}
 
 }

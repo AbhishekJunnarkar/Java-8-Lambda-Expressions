@@ -13,17 +13,18 @@ public class MethodReferenceExample {
 
 	private static void methodReferenceExample(List<Integer> numbers) {
 		System.out.println("\nPrint All Numbers In Functional Way");
-		// What to do?
-		numbers.stream().forEach(MethodReferenceExample::print);// Method reference
+
+		numbers.stream().forEach(System.out::println);// Method reference
 
 		System.out.println("\nPrint All Numbers sorted In Functional Way");
-		// What to do?
-		numbers.stream().sorted().forEachOrdered(MethodReferenceExample::print);// Method reference
 
-	}
+		numbers.stream().sorted().forEachOrdered(System.out::println);// Method reference
 
-	private static void print(int number) {
-		System.out.print(number + " ");
+		System.out.println("\nPrint All Even Numbers sorted In Functional Way");
+
+		numbers.stream().filter(number -> number % 2 == 0).sorted().forEachOrdered(System.out::println);// Method
+																										// reference
+
 	}
 
 }
