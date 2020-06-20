@@ -7,7 +7,8 @@ public class MethodReferencePrintSortFindEvenNumberOperations {
 
 	public static void main(String[] args) {
 
-		methodReferenceExample(List.of(12, 6, 15, 4, 65, 1, 3, 4, 6, 2, 7));
+		List<Integer> members = List.of(12, 6, 15, 4, 65, 1, 3, 4, 6, 2, 7);
+		methodReferenceExample(members);
 
 	}
 

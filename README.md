@@ -1,5 +1,5 @@
 # LambdaStreamNumericia
-Lambda and Streams examples on Numeric sequences
+Lambda and Streams examples on Numeric sequences and String Sequences
 
 ## Numeric sequences
 * addNumericsusingPredefinedFunctionAddOfIntegerClass(numbers);
@@ -8,14 +8,18 @@ Lambda and Streams examples on Numeric sequences
 * findGreatestEntity(numbers);
 * squareEveryNumberAndFindSumOfSquares(numbers);
 * cubeEveryNumberAndFindSumOfCubes(numbers);
+
 ## String sequences
-* printFamilyTree(members);
+* printFamilyTreesortedNaturalOrder(members);
+* printFamilyTreesortedSizeofCharsusingComparator(members);
 * printFamilyMembersNameStartingWithA(members);
 * printFamilyMembersNameHaving5Characters(members);
 * printNumberofCharactersinEachName(members);
+
 ## Method references
-* methodReferenceExample(List.of(12, 6, 15, 4, 65, 1, 3, 4, 6, 2, 7));
+* methodReferenceExample(members);
 * methodReferenceExampleSysoSolution(numbers);
 * methodReferenceExampleOrderdSysoSolution(numbers);
+* methodReferenceExampleDistinctSysoSolution(numbers);		
 * methodReferenceExampleSysoSolution(numbers);
 * methodReferenceExampleOrderdSysoSolution(numbers);

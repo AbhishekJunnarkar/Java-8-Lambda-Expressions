@@ -1,5 +1,6 @@
 package main.java.functionalBasic;
 
+import java.util.Comparator;
 import java.util.List;
 
 //:: Operator for Method reference
@@ -10,7 +11,9 @@ public class FamilyTreeFunctionalProgStringOperations {
 		List<String> members = List.of("Priyanka", "Abhishek", "Arnav", "Aarna", "Sandhya", "Chandrakant", "Pradeep",
 				"Prerana", "Slimy");
 
-		printFamilyTree(members);
+		printFamilyTreesortedNaturalOrder(members);
+
+		printFamilyTreesortedSizeofCharsusingComparator(members);
 
 		printFamilyMembersNameStartingWithA(members);
 
@@ -37,10 +40,17 @@ public class FamilyTreeFunctionalProgStringOperations {
 
 	}
 
-	private static void printFamilyTree(List<String> members) {
+	private static void printFamilyTreesortedNaturalOrder(List<String> members) {
 
-		System.out.println("Print all members ");
+		System.out.println("Print all members sorted Natural Order");
 		members.stream().sorted().forEach(System.out::println);
+
+	}
+
+	private static void printFamilyTreesortedSizeofCharsusingComparator(List<String> members) {
+
+		System.out.println("Print all members sorted  by size of characters using comparator ");
+		members.stream().sorted(Comparator.comparing(str -> str.length())).forEach(System.out::println);
 
 	}
 
