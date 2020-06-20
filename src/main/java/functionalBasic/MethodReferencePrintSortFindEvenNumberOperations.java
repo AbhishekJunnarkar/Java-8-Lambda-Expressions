@@ -1,9 +1,9 @@
-package main.java;
+package main.java.functionalBasic;
 
 import java.util.List;
 
 //:: Operator for Method reference
-public class MethodReferenceExample {
+public class MethodReferencePrintSortFindEvenNumberOperations {
 
 	public static void main(String[] args) {
 

@@ -1,9 +1,9 @@
-package main.java;
+package main.java.functionalBasic;
 
 import java.util.List;
 
 //:: Operator for Method reference
-public class FamilyTree {
+public class FamilyTreeFunctionalProgStringOperations {
 
 	public static void main(String[] args) {
 
