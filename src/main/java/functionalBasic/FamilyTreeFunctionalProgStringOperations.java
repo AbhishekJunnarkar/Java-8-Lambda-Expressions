@@ -15,6 +15,13 @@ public class FamilyTreeFunctionalProgStringOperations {
 		printFamilyMembersNameStartingWithA(members);
 
 		printFamilyMembersNameHaving5Characters(members);
+
+		printNumberofCharactersinEachName(members);
+	}
+
+	private static void printNumberofCharactersinEachName(List<String> members) {
+		System.out.println("Print all members having 5 characters in name");
+		members.stream().map(map -> map.length()).sorted().forEach(System.out::println);
 	}
 
 	private static void printFamilyMembersNameHaving5Characters(List<String> members) {
