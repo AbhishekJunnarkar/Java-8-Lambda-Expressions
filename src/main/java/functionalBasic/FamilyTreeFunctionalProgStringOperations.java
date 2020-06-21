@@ -2,6 +2,7 @@ package main.java.functionalBasic;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 //:: Operator for Method reference
 public class FamilyTreeFunctionalProgStringOperations {
@@ -20,6 +21,14 @@ public class FamilyTreeFunctionalProgStringOperations {
 		printFamilyMembersNameHaving5Characters(members);
 
 		printNumberofCharactersinEachName(members);
+		
+		List<Integer> listOfcharacters = listofCharactersinEachName(members);
+		System.out.println("List of Characters in Each Name " + listOfcharacters);
+	}
+
+	private static List<Integer> listofCharactersinEachName(List<String> members) {
+		System.out.println("Print all members having 5 characters in name");
+		return members.stream().map(map -> map.length()).sorted().collect(Collectors.toList());
 	}
 
 	private static void printNumberofCharactersinEachName(List<String> members) {
