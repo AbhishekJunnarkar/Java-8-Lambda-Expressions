@@ -4,15 +4,28 @@ Lambda and Streams examples on Numeric sequences and String Sequences with focus
 ## Simple definitions
 
 * Predicate: Takes a input and returns a boolean result 
-> e.g. Predicate<Integer> isPredicate = x -> x%2 == 0;
+..* e.g. Predicate<Integer> isPredicate = x -> x%2 == 0;
+
 
 * Function: Takes a input and returns a value
+..* e.g. Function<Integer, Integer> squareFunction = x * x;
+..* or   Function<Integer, String> squareFunction = x + " ";
+
 
 * Consumer: Takes a input and processes it(no return)
+..* e.g. Consumer<Integer> sysoConsumer = x -> System.out.println(x);
+
 
 * Binary Operator: Takes 2 operands as input and return the output of the same type
+e.g. BinaryOperatorInteger sumBinaryOperator = (x,y) -> x * y;
+
+
 * Behavior parameterization: The ability of a method to receive multiple different behavior as its parameter and use them internally to accomplish the task. Inother words, passing the logic of the method or passing the behavior as argument. Passing methods as parameter removes verbosity from the code and in fact increases reusability.
+
+
 * Streams helps in writing SQL like syntaxes, parallelization that is almost free:- speed of the execution with efficient use of modern computers having multicore processors
+
+
 * Optional for handling null, its a container object used for handling not-null objects
 
 ## Numeric sequences Examples in Code
@@ -37,3 +50,4 @@ Lambda and Streams examples on Numeric sequences and String Sequences with focus
 * methodReferenceExampleDistinctSysoSolution(numbers);		
 * methodReferenceExampleSysoSolution(numbers);
 * methodReferenceExampleOrderdSysoSolution(numbers);
+Lambda and Streams examples on Numberic sequences
