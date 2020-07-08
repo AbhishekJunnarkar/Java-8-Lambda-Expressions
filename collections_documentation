@@ -1,0 +1,106 @@
+# Collections
+The collections are high-performance and highly interoperable framework elements.
+	
+## Collection Interfaces
+
+### The collection interface
+-	This enables you to work with groups of objects
+-	 All collections implement collection interface
+-	It is on the top of collections hierarchy
+-	Some of the methods can throw UnSupportedOperationException
+]
+###	The List interface
+-	Extends collection and an instance of list stores ordered collection of elements
+-	This interface is implemented by classes like ArrayList, LinkedList etc
+-	In addition to methods defined by Collection, it defines some of its own
+-	Insertion index is maintained
+-	List can contain duplicate elements
+-	Some methods can throw UnSupportedOperationException and classCastException
+3.	The Set
+-	Extends collection to handle sets, which must contain unique elements
+-	 No duplicates allowed.
+-	Models the mathematical Set Abstraction.
+-	Contains only methods implemented by Collection, and adds the restriction that duplicate elements are prohibited.
+-	Also adds stronger contract on behavior of Equals and HashCode operations, allowing Set elements to be implemented meaningfully.
+4.	The SortedSet
+-	Extends Set to handles sorted sets.
+-	Declares the behavior of a set in ascending order.
+-	Null is not allowed in the Set.
+-	In addition to set’s methods, provides additional methods like: comparator(), first(), last(), headset(Object end), subSet(Object start, Object end), tailSet(Object start)
+5.	The Map
+-	Maps Unique keys to values
+-	Key methods: clear(), containsKey(Object K), containsValue(Object v), Set EntrySet(),
+-	Equals(), hashcode(), isEmpty(), keyset(), put, putAll, size, values().
+6.	The Map.Entry
+-	This describes an element (a key/value pair) in a map. This is an inner class of the map.
+-	Map.Entry() is a key and a value combined in one class.
+-	This allows you to iterate over the Map.entrySet() instead of iterating over the Map.keySet) and then fetching the value for each key.
+-	Methods are getKey(), getValue(), equals(Object obj), hashcode(), setValue(Object v)
+7.	The SortedMap
+-	Extends Map interface so that key is maintained in ascending key order.
+-	Key methods: comparator(), firstKey(), headMap(), lastKey, subMap, tailMap
+-	This interface is implemented by TreeMap class.
+8.	The Enumeration
+-	A legacy interface that allows you to enumerate the elements in the collection of objects. 
+-	It is superseded by Iterator.
+
+	Classes
+
+1.	Abstract collection
+-	Implements most of the collection interface.
+2.	Abstract List
+-	Implements Abstract collection and extends most of the List interface.
+3.	AbstractSequentialList
+-	Extends AbstractList for use by a collection that uses Sequential rather than random access of its elements.
+4.	LinkedList
+-	Implements AbstractrSequentialList and implements List interface.
+-	Provides linked list data structure.
+-	Allows you to add a element at a specified index in the collection
+5.	ArrayList
+-	Extends AbstractList and implements List interface.
+-	Supports dynamic array’s that can grow as needed.
+-	Is initialized with a initial size, can grow as the size increases. Can shrunk as the size decreases.
+-	Clone() method returns a shallow copy of the ArrayList().
+-	ensureCapacity (int minCapacity) ensures that the minimum capacity is maintained.
+-	trimToSize() – trims the capacity of this ArrayList to the list’s current size.
+6.	AbstractSet
+-	Extends Abstract collection and implements Set interface.
+7.	Hashset
+-	Extends Abstract set and implements Set interface.
+-	Creates a collection that uses Hash table for storage.
+-	Hashcode of the key which is a unique value is used as the index for storing the data associated with the key.
+8.	LinkedHashSet
+-	LinkedHashSet extends HashSet and maintains a linked list of the entries in the set, in the order in which they were inserted. This allows insertion order iteration over the set.
+9.	TreeSet
+-	Implements a Set sorted in a Tree. Extends AbstractSet.
+-	Objects are stored in sorted, ascending order.
+-	Access and retrival times are quite fast.
+10.	AbstractMap
+-	Implements Map interface. 
+11.	HashMap
+-	Extends AbstractMap to extend the hash table.
+-	This allows the execution time of basic operations, such as get and put() to remain constant even for large sets.
+12.	TreeMap
+-	Implements Map interface by using a Tree. 
+-	Supports Sorted ascending Order and rapid retrival
+
+13.	WeakHashMap
+-	Extends HashMap to use HashTable with WeakMap keys.
+-	The weakHashMap works same as HashMap with one exception, if the Java memory pointer doesn’t has a reference to the Object that is used as a key, then the entry in the map is automatically removed.
+
+14.	LinkedHashMap
+-	Extends HashMap and maintains the linked list of the entries in the map, in the order in which they were inserted.
+-	You can also create a LinkedHashMap which returns the objects in the order in which they were last accessed.
+15.	IdentityHashMap
+Legacy collection classes:
+1.	Vector
+2.	Stack
+3.	Dictionary
+4.	HashTable
+5.	Properties
+6.	BitSet
+	Algorithms
+
+1.	Iterator
+2.	Comparator
+3.	Hashing: The informational content of a key is used to identify a unique value, which is called its hashcode.
